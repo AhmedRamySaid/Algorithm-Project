@@ -1,4 +1,4 @@
-package asu.caie.algorithmproject.tasks.taskfour;
+package asu.caie.algorithmproject.tasks.taskfour.algorithms;
 
 import java.util.*;
 

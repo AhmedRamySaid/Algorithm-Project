@@ -1,6 +1,5 @@
 package asu.caie.algorithmproject;
 
-import asu.caie.algorithmproject.tasks.taskfour.KnightSwapScene;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
@@ -18,7 +17,7 @@ public class Main extends Application {
 		Scene scene = new Scene(new Pane(), 800, 600);
 		primaryStage.setScene(scene);
 
-		new KnightSwapScene(0);
+		new MainScene();
 	}
 
 	public static void main(String[] args) {

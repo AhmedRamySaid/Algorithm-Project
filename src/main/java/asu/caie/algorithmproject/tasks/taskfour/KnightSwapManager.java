@@ -1,5 +1,6 @@
 package asu.caie.algorithmproject.tasks.taskfour;
 
+import asu.caie.algorithmproject.tasks.taskfour.algorithms.KnightSwapAlgorithms;
 import asu.caie.algorithmproject.tasks.taskfour.models.Knight;
 import asu.caie.algorithmproject.tasks.taskfour.models.Tile;
 import javafx.scene.control.Alert;
