@@ -1,6 +1,7 @@
 package asu.caie.algorithmproject.tasks.taskfour.views;
 
 import asu.caie.algorithmproject.Main;
+import asu.caie.algorithmproject.MainScene;
 import asu.caie.algorithmproject.tasks.taskfour.KnightSwapManager;
 import asu.caie.algorithmproject.tasks.taskfour.models.Tile;
 import javafx.beans.binding.Bindings;
@@ -16,7 +17,11 @@ public class KnightSwapScene {
 	KnightSwapManager manager;
 
 	public KnightSwapScene(int algoCode) {
-		manager = new KnightSwapManager(3, 4, "nnn/3/3/NNN", algoCode);
+		this(algoCode, -1);
+	}
+
+	public KnightSwapScene(int algoCode, int sideLength) {
+		createManager(algoCode, sideLength);
 		// Create the GridPane for the chessboard
 		GridPane gridPane = new GridPane();
 		gridPane.setAlignment(Pos.CENTER);
@@ -55,7 +60,7 @@ public class KnightSwapScene {
 		Button backButton = new Button("Back");
 		backButton.prefWidthProperty().bind(Main.primaryStage.widthProperty().divide(8));
 		backButton.prefHeightProperty().bind(Main.primaryStage.heightProperty().divide(14));
-		backButton.setOnAction(_ -> new TaskFourSelectionScene());
+		backButton.setOnAction(_ -> new MainScene());
 
 		// Create a StackPane to hold the back button
 		// This assures it is in the left in the top part of the BorderPane
@@ -68,5 +73,13 @@ public class KnightSwapScene {
 
 		// Sets the layout without changing the scene
 		Main.primaryStage.getScene().setRoot(pane);
+	}
+
+	private void createManager(int algoCode, int n) {
+		if (algoCode <= 1) {
+			manager = new KnightSwapManager(3, 4, "nnn/3/3/NNN", algoCode);
+		} else {
+			manager = new KnightSwapManager(n, n, "3/3/3/3", algoCode);
+		}
 	}
 }
