@@ -64,10 +64,10 @@ public class KnightTourAlgorithm {
     private static void fill_board() {
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board.length; j++) {
-//                if(i == x_start && j == y_start)
-//                    board[i][j] = 0;
-//                else
-                board[i][j] = -1;
+                if(i == x_start && j == y_start)
+                    board[i][j] = 0;
+                else
+                    board[i][j] = -1;
             }
         }
     }
