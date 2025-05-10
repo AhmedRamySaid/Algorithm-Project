@@ -37,7 +37,7 @@ public class KnightSwapManager {
 				moves = KnightSwapAlgorithms.solveAStar();
 				break;
 			case 3:
-				moves = KnightTourAlgorithm.start_solve_greedy_optimized(1, 4);
+				moves = KnightTourAlgorithm.start_solve_greedy_optimized(8, 3, 5);
 				break;
 			default:
 				System.err.println("Invalid algorithm code");

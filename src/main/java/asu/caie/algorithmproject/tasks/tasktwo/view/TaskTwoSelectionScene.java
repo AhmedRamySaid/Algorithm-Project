@@ -26,9 +26,6 @@ public class TaskTwoSelectionScene {
         backtrackingGreedy.prefWidthProperty().bind(Main.primaryStage.widthProperty().divide(4));
         backtrackingGreedy.prefHeightProperty().bind(Main.primaryStage.heightProperty().divide(10));
 
-        Button hi = new Button("Third algorithm");
-        hi.prefWidthProperty().bind(Main.primaryStage.widthProperty().divide(4));
-        hi.prefHeightProperty().bind(Main.primaryStage.heightProperty().divide(10));
 
         Button backButton = new Button("Back");
         backButton.prefWidthProperty().bind(Main.primaryStage.widthProperty().divide(8));
@@ -38,10 +35,9 @@ public class TaskTwoSelectionScene {
 
         classicGreedyButton.setOnAction(_ -> new KnightSwapScene(2, 8));
         backtrackingGreedy.setOnAction(_ -> new KnightSwapScene(3, 8));
-        hi.setOnAction(_ -> {});
         backButton.setOnAction(_ -> new MainScene());
 
-        newRoot.getChildren().addAll(classicGreedyButton, backtrackingGreedy, hi);
+        newRoot.getChildren().addAll(classicGreedyButton, backtrackingGreedy);
         pane.setCenter(newRoot);
         pane.setTop(backButtonPane);
 
