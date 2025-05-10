@@ -123,7 +123,7 @@ public class KnightTourAlgorithm {
 
         if (candidates.isEmpty()) return null;
 
-        // إذا فاضل خطوة واحدة فقط (آخر خطوة)، لازم نرجع لنقطة البداية
+        //it is the last move
         if (moveCount == n * n - 1) {
             for (int[] c : candidates) {
                 if (Math.abs(c[0] - x_start) + Math.abs(c[1] - y_start) == 1 ||
@@ -132,16 +132,16 @@ public class KnightTourAlgorithm {
                     return c;
                 }
             }
-            return candidates.get(0); // مفيش حد بيوصل للبداية؟ نختار أي حاجة
+            return candidates.get(0); //choose any one
         }
-        // نحاول نتجنب الخطوة اللي بتقرب من نقطة البداية
+        //choose the cell not next to start
         for (int[] c : candidates) {
             if (!isClosed(c[0], c[1])) {
                 return c;
             }
         }
 
-        // مفيش غير اللي بيقرب من البداية؟ يبقى نختار منهم وخلاص
+        //all cells are next to start, choose any one
         return candidates.get(0);
     }
 
