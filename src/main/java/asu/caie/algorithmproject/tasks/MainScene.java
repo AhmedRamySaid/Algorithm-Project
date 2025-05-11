@@ -1,6 +1,7 @@
 package asu.caie.algorithmproject.tasks;
 
 import asu.caie.algorithmproject.Main;
+import asu.caie.algorithmproject.tasks.researchtasks.GraphColoringVisualization;
 import asu.caie.algorithmproject.tasks.taskfour.views.TaskFourSelectionScene;
 import asu.caie.algorithmproject.tasks.tasksix.views.TaskSixSelectionScene;
 import asu.caie.algorithmproject.tasks.tasktwo.view.TaskTwoSelectionScene;
@@ -32,6 +33,12 @@ public class MainScene {
 			});
 			root.getChildren().add(button);
 		}
+
+		Button button = new Button("Research task 3");
+		button.setOnAction(_ -> new GraphColoringVisualization());
+		button.prefWidthProperty().bind(Main.primaryStage.widthProperty().divide(6));
+		button.prefHeightProperty().bind(Main.primaryStage.heightProperty().divide(12));
+		root.getChildren().add(button);
 
 		Main.primaryStage.getScene().setRoot(root);
 	}
