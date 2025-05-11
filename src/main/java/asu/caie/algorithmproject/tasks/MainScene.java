@@ -4,7 +4,7 @@ import asu.caie.algorithmproject.Main;
 import asu.caie.algorithmproject.tasks.researchtasks.GraphColoringVisualization;
 import asu.caie.algorithmproject.tasks.taskfour.views.TaskFourSelectionScene;
 import asu.caie.algorithmproject.tasks.tasksix.views.TaskSixSelectionScene;
-import asu.caie.algorithmproject.tasks.tasktwo.view.TaskTwoSelectionScene;
+import asu.caie.algorithmproject.tasks.tasktwo.view_2.TaskTwoSelectionScene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 
