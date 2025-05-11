@@ -3,6 +3,7 @@ package asu.caie.algorithmproject.tasks;
 import asu.caie.algorithmproject.Main;
 import asu.caie.algorithmproject.tasks.taskfour.views.TaskFourSelectionScene;
 import asu.caie.algorithmproject.tasks.tasksix.views.TaskSixSelectionScene;
+import asu.caie.algorithmproject.tasks.tasktwo.view.TaskTwoSelectionScene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 
@@ -22,7 +23,7 @@ public class MainScene {
 			button.setOnAction(_ -> {
 				switch (taskNumber) {
 					case 1 -> System.out.println("Task 1");
-					case 2 -> System.out.println("Task 2");
+					case 2 -> new TaskTwoSelectionScene();
 					case 3 -> System.out.println("Task 3");
 					case 4 -> new TaskFourSelectionScene();
 					case 5 -> System.out.println("Task 5");
