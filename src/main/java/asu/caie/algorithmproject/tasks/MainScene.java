@@ -1,7 +1,7 @@
-package asu.caie.algorithmproject;
+package asu.caie.algorithmproject.tasks;
 
+import asu.caie.algorithmproject.Main;
 import asu.caie.algorithmproject.tasks.taskfour.views.TaskFourSelectionScene;
-import asu.caie.algorithmproject.tasks.tasksix.views.PathVisualizer;
 import asu.caie.algorithmproject.tasks.tasksix.views.TaskSixSelectionScene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;

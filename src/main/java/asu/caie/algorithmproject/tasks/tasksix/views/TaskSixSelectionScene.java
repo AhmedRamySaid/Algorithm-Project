@@ -1,8 +1,7 @@
 package asu.caie.algorithmproject.tasks.tasksix.views;
 
 import asu.caie.algorithmproject.Main;
-import asu.caie.algorithmproject.MainScene;
-import asu.caie.algorithmproject.tasks.taskfour.views.KnightSwapScene;
+import asu.caie.algorithmproject.tasks.MainScene;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;

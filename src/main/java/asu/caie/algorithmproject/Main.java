@@ -1,5 +1,6 @@
 package asu.caie.algorithmproject;
 
+import asu.caie.algorithmproject.tasks.MainScene;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
