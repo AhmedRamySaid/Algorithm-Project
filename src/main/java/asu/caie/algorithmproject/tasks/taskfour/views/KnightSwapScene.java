@@ -1,7 +1,7 @@
 package asu.caie.algorithmproject.tasks.taskfour.views;
 
 import asu.caie.algorithmproject.Main;
-import asu.caie.algorithmproject.MainScene;
+import asu.caie.algorithmproject.tasks.MainScene;
 import asu.caie.algorithmproject.tasks.taskfour.KnightSwapManager;
 import asu.caie.algorithmproject.tasks.taskfour.models.Tile;
 import javafx.beans.binding.Bindings;

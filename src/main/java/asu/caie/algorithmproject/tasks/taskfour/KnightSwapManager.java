@@ -3,7 +3,7 @@ package asu.caie.algorithmproject.tasks.taskfour;
 import asu.caie.algorithmproject.tasks.taskfour.algorithms.KnightSwapAlgorithms;
 import asu.caie.algorithmproject.tasks.taskfour.models.Knight;
 import asu.caie.algorithmproject.tasks.taskfour.models.Tile;
-import asu.caie.algorithmproject.tasks.tasktwo.algorithm.KnightTourAlgorithm;
+//import asu.caie.algorithmproject.tasks.tasktwo.algorithm.KnightTourAlgorithm;
 import javafx.scene.control.Alert;
 import javafx.scene.paint.Color;
 
@@ -35,6 +35,9 @@ public class KnightSwapManager {
 				break;
 			case 1:
 				moves = KnightSwapAlgorithms.solveAStar();
+				break;
+			case 3:
+				//moves = KnightTourAlgorithm.start_solve_greedy_optimized(8, 3, 5);
 				break;
 			default:
 				System.err.println("Invalid algorithm code");
